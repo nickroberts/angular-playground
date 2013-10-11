@@ -1,4 +1,5 @@
-## Angular Playground
+Angular Playground
+=========
 
 Uses the following components:
 
