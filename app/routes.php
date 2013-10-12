@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'HomeController@showHome');
+
+Route::resource('todos', 'TodosController');

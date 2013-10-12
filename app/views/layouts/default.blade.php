@@ -17,7 +17,20 @@
 
     <body>
 
-        @yield('content')
+        @include('partials.menu')
+
+        <div class="container">
+            <div class="content">
+
+                @if (Session::has('message'))
+                    <div class="flash alert">
+                        <p>{{ Session::get('message') }}</p>
+                    </div>
+                @endif
+
+                @yield('main')
+            </div>
+        </div>
 
         <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
